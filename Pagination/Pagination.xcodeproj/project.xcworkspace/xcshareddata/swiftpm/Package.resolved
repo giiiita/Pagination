@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "QGrid",
+        "repositoryURL": "https://github.com/giiiita/QGrid.git",
+        "state": {
+          "branch": null,
+          "revision": "0bef369f0e96d46276394aecee1d98580ed7d362",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85474539258F2C1400EBC560 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85474538258F2C1400EBC560 /* GridView.swift */; };
+		8547453F258F2C4B00EBC560 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 8547453E258F2C4B00EBC560 /* QGrid */; };
 		8568734E258F25050067F2E3 /* PaginationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568734D258F25050067F2E3 /* PaginationApp.swift */; };
 		85687350258F25050067F2E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568734F258F25050067F2E3 /* ContentView.swift */; };
 		85687352258F25060067F2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85687351258F25060067F2E3 /* Assets.xcassets */; };
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85474538258F2C1400EBC560 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		8568734A258F25050067F2E3 /* Pagination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pagination.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8568734D258F25050067F2E3 /* PaginationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationApp.swift; sourceTree = "<group>"; };
 		8568734F258F25050067F2E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8547453F258F2C4B00EBC560 /* QGrid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,10 +110,11 @@
 				85687383258F257E0067F2E3 /* ScrollTracker */,
 				8568734D258F25050067F2E3 /* PaginationApp.swift */,
 				8568734F258F25050067F2E3 /* ContentView.swift */,
+				85474538258F2C1400EBC560 /* GridView.swift */,
+				85687396258F25D90067F2E3 /* Cell.swift */,
 				85687351258F25060067F2E3 /* Assets.xcassets */,
 				85687356258F25060067F2E3 /* Info.plist */,
 				85687353258F25060067F2E3 /* Preview Content */,
-				85687396258F25D90067F2E3 /* Cell.swift */,
 			);
 			path = Pagination;
 			sourceTree = "<group>";
@@ -166,6 +171,9 @@
 			dependencies = (
 			);
 			name = Pagination;
+			packageProductDependencies = (
+				8547453E258F2C4B00EBC560 /* QGrid */,
+			);
 			productName = Pagination;
 			productReference = 8568734A258F25050067F2E3 /* Pagination.app */;
 			productType = "com.apple.product-type.application";
@@ -237,6 +245,9 @@
 				Base,
 			);
 			mainGroup = 85687341258F25050067F2E3;
+			packageReferences = (
+				8547453D258F2C4B00EBC560 /* XCRemoteSwiftPackageReference "QGrid" */,
+			);
 			productRefGroup = 8568734B258F25050067F2E3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -282,6 +293,7 @@
 				8568738D258F259E0067F2E3 /* ScrollTrackerView.swift in Sources */,
 				85687385258F25900067F2E3 /* Buildable.swift in Sources */,
 				85687392258F25AF0067F2E3 /* ScrollContentHeightKey.swift in Sources */,
+				85474539258F2C1400EBC560 /* GridView.swift in Sources */,
 				85687350258F25050067F2E3 /* ContentView.swift in Sources */,
 				8568734E258F25050067F2E3 /* PaginationApp.swift in Sources */,
 				85687397258F25D90067F2E3 /* Cell.swift in Sources */,
@@ -598,6 +610,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8547453D258F2C4B00EBC560 /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/giiiita/QGrid.git";
+			requirement = {
+				kind = revision;
+				revision = 0bef369f0e96d46276394aecee1d98580ed7d362;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8547453E258F2C4B00EBC560 /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8547453D258F2C4B00EBC560 /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 85687342258F25050067F2E3 /* Project object */;
 }
